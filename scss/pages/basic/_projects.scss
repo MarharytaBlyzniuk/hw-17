@@ -1,0 +1,107 @@
+.project {
+  margin: 0 80px;
+
+  &__title {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 100px;
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; // 4 колонки одинаковой ширины
+    grid-gap: 10px; // Пробелы между элементами
+    border-radius: 40px;
+    text-align: center;
+  }
+
+  &__text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5); // Полупрозрачный фон для улучшения читаемости текста
+    color: var(--clr-text-white);
+    font-size: 18px;
+    text-align: center;
+  }
+
+  &__nav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    background-size: cover; // Изображение растягивается по блоку
+    background-position: center; // Центрирование фона
+    min-height: 200px;
+    width: 100%; // Адаптивная ширина
+    text-align: center;
+    color: var(--clr-text-white);
+    text-decoration: none;
+    overflow: hidden; // Обрезать содержимое за пределами блока
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.05); // Эффект увеличения при наведении
+    }
+  }
+
+  .h4_wh {
+    padding: 10px;
+  }
+}
+
+.block__yellow {
+  background-color: var(--bg-clr-yellow);
+  width: 100%;
+  height: auto;
+  color: var(--clr-text-black);
+}
+
+
+@media (max-width: 1024px) {
+
+  .project {
+    margin: 0 70px;
+  }
+}
+
+@media (max-width: 768px) {
+  .project {
+    margin: 0 40px;
+
+    &__container {
+      display: grid;
+      grid-template-columns: 1fr 1fr; // 4 колонки одинаковой ширины
+      grid-gap: 10px; // Пробелы между элементами
+      border-radius: 30px;
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .project {
+    margin: 0 15px;
+
+    &__container {
+      display: grid;
+      grid-template-columns: 1fr 1fr; // 4 колонки одинаковой ширины
+
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .project {
+    margin: 0 15px;
+
+    &__container {
+      display: grid;
+      grid-template-columns: 1fr; // 4 колонки одинаковой ширины
+
+    }
+  }
+}

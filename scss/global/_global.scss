@@ -1,0 +1,42 @@
+
+:root {
+  --bg-clr-blue: #1A7DF0;
+  --b--bg-clr-blueg-clr-white: #FFFFFF;
+
+  --bg-clr-yellow: #FFE711;
+  --bg-clr-dark_yellow: #F9D100;
+
+  --bg-clr-dark_blue: #1A7DF0;
+  --bg-clr-blue_dark: #005BC5;
+  --bg-clr-light_yellow: rgba(255, 231, 17, 0.5);
+  --bg-clr-light_blue: rgba(26, 125, 240, 0.5);
+  --bg-clr-white: #FFFFFF;
+
+  --clr-text-black: #333333;
+  --clr-text-white: #FFFFFF;
+  --clr-text-blue: #1A7DF0;
+
+
+}
+
+
+body {
+  width: 100%;
+  font-family: "Raleway", sans-serif;
+}
+
+
+.main__screen {
+  background: url("../../img/icons/hand.png") 90% 20% no-repeat, url("../../img/ellips_yellow.png") 100% 5% no-repeat, url("../../img/ellips_blue.png") 0% 10% no-repeat;
+}
+
+
+.line__blue {
+  border: 5px solid #1A7DF0;
+  margin: 0;
+}
+
+.line__yellow {
+  border: 5px solid #FFE711;
+  margin: 0;
+}

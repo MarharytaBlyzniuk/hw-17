@@ -1,0 +1,147 @@
+
+.footer {
+  margin: 0;
+  padding: 60px 80px 10px 80px;
+
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+
+    &-logo {
+      display: grid;
+      grid-column: 1;
+      grid-row: 1;
+
+    }
+
+    &-column {
+      display: flex;
+      justify-content: space-between;
+
+    }
+
+    &-box {
+      list-style: none;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 10px;
+    }
+  }
+
+  &-down {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+
+    &-column {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 100px;
+    }
+
+  }
+
+
+  &-text {
+    text-decoration: none;
+
+    &:hover {
+      color: var(--clr-text-blue);
+    }
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .footer {
+    margin: 0;
+    padding: 80px 30px 10px 30px;
+
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+
+      &-box {
+        list-style: none;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
+      }
+    }
+
+    &-down {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 30px;
+
+      &-column {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+
+    }
+  }
+}
+
+
+@media (max-width: 500px) {
+  .footer {
+    margin: 0;
+    padding: 80px 20px 10px 20px;
+
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+
+      &-logo {
+        display: flex;
+        margin-bottom: 20px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+
+      }
+
+      &-column {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        align-items: center;
+
+      }
+
+      &-box {
+        list-style: none;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    &-down {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 30px;
+
+      &-column {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+
+    }
+  }
+}
+
+
+

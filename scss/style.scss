@@ -1,0 +1,28 @@
+@import "common/_normalize";
+
+@import "global/_global";
+@import "global/_button";
+@import "global/_text";
+
+@import "general/header";
+@import "general/footer";
+@import "general/news";
+@import "general/team";
+@import "general/contacts";
+@import "general/marquee";
+@import "general/title";
+@import "general/burger";
+
+//basic-page(index.html)//
+@import "pages/basic/projects";
+@import "pages/basic/meetings";
+@import "pages/basic/association";
+@import "pages/basic/partners";
+@import "pages/basic/numbers";
+@import "pages/basic/video";
+@import "pages/basic/about";
+@import "pages/basic/goal";
+
+//basic-page(barcelona.html)//
+@import "pages/barcelona/_info";
+@import "pages/barcelona/_description";

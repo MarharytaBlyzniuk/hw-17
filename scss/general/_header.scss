@@ -1,0 +1,123 @@
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 80px;
+
+
+  &__nav {
+    display: flex;
+    align-items: center;
+
+    &-logo {
+      padding-right: 60px;
+    }
+
+    &-img {
+      display: flex;
+      gap: 18px;
+    }
+  }
+
+
+  &__container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    &-img {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      text-decoration: none;
+      text-align: center;
+
+      &:hover {
+        color: var(--clr-text-blue);
+      }
+    }
+  }
+
+  &__box {
+    margin-top: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+
+    &-nav {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      text-decoration: none;
+      text-align: center;
+
+      &:hover {
+        color: var(--clr-text-blue);
+      }
+
+    }
+  }
+}
+
+
+/* Кнопка выпадающего списка */
+.dropbtn {
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* Контейнер <div> - необходим для размещения выпадающего содержимого */
+.dropdown {
+  position: relative;
+  display: inline-block;
+
+  &-content {
+    display: none;
+    position: absolute;
+    box-shadow: 5px 5px 8px;
+    z-index: 1;
+  }
+
+  &-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+
+    &:hover {
+      color: var(--bg-clr-blue_dark);
+    }
+  }
+
+  &:hover .dropdown-content {
+    display: block;
+  }
+
+  &:hover .dropbtn {
+    transform: rotate(180deg)
+  }
+}
+
+@media (max-width: 1150px) {
+  .header {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 765px) {
+  .header {
+    display: none;
+
+    &__box {
+      display: none;
+    }
+  }
+}
+
+
+
+

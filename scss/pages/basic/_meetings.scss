@@ -1,0 +1,70 @@
+.meetings {
+  padding: 100px 80px 60px 80px;
+
+  &__title {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  &__description {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 15px;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  &__list {
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-gap: 20px;
+  }
+
+  &__decor {
+    display: flex;
+    align-items: start;
+    gap: 10px;
+
+  }
+
+}
+
+.text__decor {
+  gap: 15px;
+  text-decoration: none;
+
+  &:hover {
+    color: var(--clr-text-blue);
+  }
+}
+
+@media (max-width: 1000px) {
+  .meetings {
+    padding: 100px 60px 60px 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .meetings {
+    padding: 100px 30px 60px 30px;
+
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    &__decor {
+      display: flex;
+      align-items: start;
+      gap: 10px;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .meetings {
+    padding: 80px 10px 60px 10px;
+  }
+}

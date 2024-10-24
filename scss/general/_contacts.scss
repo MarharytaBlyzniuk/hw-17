@@ -1,0 +1,145 @@
+.contacts {
+  background-color: var(--bg-clr-blue);
+  margin: 0;
+  padding: 80px 60px;
+
+  &__title {
+    text-align: center;
+    padding-bottom: 30px;
+    margin: 0;
+  }
+
+  &__description {
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    gap: 20px;
+  }
+
+  &__about {
+    width: 710px;
+    text-align: justify;
+    justify-content: center;
+
+    &__nav {
+      display: flex;
+      gap: 25px;
+      margin-top: 0;
+      margin-bottom: 20px;
+
+      &-text:hover {
+        color: var(--bg-clr-yellow);
+        font-size: 20px;
+      }
+    }
+
+
+    &__container {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+    }
+
+    &-text {
+      margin-top: 0;
+      margin-bottom: 15px;
+    }
+
+    &__map {
+      margin: 0;
+    }
+  }
+
+}
+
+
+@media (max-width: 1100px) {
+  .contacts {
+    padding: 30px 60px;
+
+
+    &__description {
+      display: flex;
+      justify-content: space-between;
+      gap: 15px;
+    }
+
+    &__about {
+      width: 50%;
+
+      &__nav {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      &__container {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+      }
+
+      &-text {
+        margin-top: 0;
+        margin-bottom: 15px;
+      }
+
+      &__map {
+        width: 50%;
+        display: flex;
+        justify-content: left;
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .contacts {
+    padding: 60px 20px;
+
+    &__title {
+      font-size: 28px;
+    }
+
+    &__description {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 15px;
+
+    }
+
+    &__about {
+      width: 99%;
+      font-size: 16px;
+
+      &__map {
+        width: 100%;
+      }
+    }
+
+  }
+}
+
+@media (max-width: 375px) {
+  .contacts {
+    padding: 60px 10px;
+
+    &__about {
+      width: 99%;
+      font-size: 14px;
+
+      &__map {
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+        height: auto;
+      }
+    }
+
+  }
+
+
+}
+
