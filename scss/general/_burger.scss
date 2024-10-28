@@ -130,6 +130,9 @@
   }
 
   /* Контейнер <div> - необходим для размещения выпадающего содержимого */
+
+  //menu
+
   .dropdown {
     position: relative;
     display: inline-block;
@@ -169,7 +172,7 @@
     padding: 15px 15px;
     margin: 0;
     list-style-type: none;
-    width: 80%;
+    width: 94%;
   }
   .menu-img {
     display: flex;
@@ -184,7 +187,6 @@
     padding: 15px 15px;
     margin: 0;
     list-style-type: none;
-    width: 80%;
   }
   .menu-img {
     display: flex;
