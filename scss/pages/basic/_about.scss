@@ -1,71 +1,145 @@
-
 .about {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-  justify-content: center;
-  margin: 0 80px;
+  margin: 0;
+  padding: 0;
+  background: url("/img/ellips_blue.png") 0 80% no-repeat;
 
+
+  &_pad {
+    padding: 58px 80px 0 80px;
+  }
+
+  &__text {
+    text-align: justify;
+  }
+
+  &__fon {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+  }
 
   &__position {
-    width: 700px;
+    width: 45%;
+    margin: auto;
 
     &__desc {
-      margin-bottom: 30px;
+      text-align: start;
     }
-
   }
+
 
   &__title {
     text-align: center;
-    margin-top: 70px;
+    margin-top: 0;
     margin-bottom: 30px;
+  }
+
+  &_text {
+    text-align: justify;
   }
 }
 
 @media (max-width: 1024px) {
-  .about {
-    margin: 0 60px;
 
+  .info {
+
+    &_pad {
+      padding: 58px 60px 100px 60px;;
+    }
+
+
+    &__position {
+      width: 80%;
+      margin: auto;
+    }
+
+
+    &__title {
+      text-align: center;
+      margin-top: 0;
+      margin-bottom: 30px;
+    }
+
+    &_text {
+      width: 70%;
+    }
   }
 }
 
 @media (max-width: 768px) {
 
-  .about {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    justify-content: center;
-    margin: 0 40px;
+  .info {
 
+    &_pad {
+      padding: 45px 30px 30px 30px;;
+    }
 
     &__position {
-      width: 45%;
-
-      &__desc {
-        font-size: 26px;
-      }
+      width: 80%;
+      margin: auto;
     }
 
     &__title {
-      font-size: 32px;
+      text-align: center;
+      margin-top: 0;
+      margin-bottom: 30px;
+    }
+
+    &_text {
+      width: 50%;
     }
   }
 }
 
 @media (max-width: 500px) {
-
   .about {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin: 0 15px;
 
+    &_pad {
+      padding: 40px 20px 0 20px;
+    }
+
+    &__text {
+      text-align: justify;
+    }
+
+    &__fon {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      text-align: center;
+      flex-wrap: wrap;
+    }
 
     &__position {
-      width: 100%;
+      text-align: justify;
+      width: 90%;
+      margin: auto;
+      gap: 30px;
+
+      &__desk {
+        width: 90%;
+      }
     }
-    
+
+    &_text {
+      text-align: justify;
+      display: flex;
+      flex-wrap: wrap;
+      width: 90%;
+    }
+
+    &__title {
+      text-align: center;
+      margin-top: 0;
+      margin-bottom: 30px;
+    }
+
+
   }
 }
+

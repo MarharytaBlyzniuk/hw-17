@@ -23,11 +23,12 @@
 body {
   width: 100%;
   font-family: "Raleway", sans-serif;
+  box-sizing: border-box;
 }
 
 
 .main__screen {
-  background: url("../../img/icons/hand.png") 90% 20% no-repeat, url("../../img/ellips_yellow.png") 100% 5% no-repeat, url("../../img/ellips_blue.png") 0% 10% no-repeat;
+  background: url("/img/icons/hand.png") 90% 20% no-repeat, url("/img/ellips_yellow.png") 100% 5% no-repeat, url("/img/ellips_blue.png") 0% 10% no-repeat;
 }
 
 
@@ -39,4 +40,14 @@ body {
 .line__yellow {
   border: 5px solid #FFE711;
   margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0;
+  padding: 0;
 }
